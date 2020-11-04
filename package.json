@@ -1,0 +1,24 @@
+{
+  "name": "soul-hiu-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.ts",
+  "source": "src/index.ts",
+  "scripts": {
+    "build": "rm -rf dist && microbundle  --tsconfig tsconfig.json",
+    "dev": "microbundle watch --tsconfig tsconfig.json",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "Soul Technology Labs",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^26.6.2", 
+    "microbundle": "^0.12.4",
+    "nock": "^13.0.4"
+  },
+  "dependencies": {
+    "isomorphic-unfetch": "^3.1.0",
+    "querystringify": "^2.2.0"
+  }
+}
