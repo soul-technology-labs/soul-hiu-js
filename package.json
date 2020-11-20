@@ -1,9 +1,11 @@
 {
-  "name": "soul-hiu-js",
+  "name": "@soul-technology-labs/soul-hiu-js",
   "version": "1.0.0",
-  "description": "",
-  "main": "dist/index.ts",
+  "description": "npm -i soul-hiu-js",
+  "main": "dist/index.umd.js",
   "source": "src/index.ts",
+  "module": "dist/index.modern.js",
+  "types": "dist/index.d.js",
   "scripts": {
     "build": "rm -rf dist && microbundle  --tsconfig tsconfig.json",
     "dev": "microbundle watch --tsconfig tsconfig.json",
@@ -13,12 +15,22 @@
   "author": "Soul Technology Labs",
   "license": "ISC",
   "devDependencies": {
-    "jest": "^26.6.2", 
+    "@types/jest": "^26.0.15",
+    "jest": "^26.6.2",
     "microbundle": "^0.12.4",
     "nock": "^13.0.4"
   },
   "dependencies": {
     "isomorphic-unfetch": "^3.1.0",
+    "moment": "^2.29.1",
     "querystringify": "^2.2.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soul-technology-labs/soul-hiu-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/soul-technology-labs/soul-hiu-js/issues"
+  },
+  "homepage": "https://github.com/soul-technology-labs/soul-hiu-js#readme"
 }
